@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, FileText } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,8 +64,16 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* Resume & CTA Buttons */}
+          <div className="hidden md:flex items-center gap-4">
+            <Button 
+              variant="ghost" 
+              onClick={() => navigate('/resume')}
+              className="text-text-secondary hover:text-electric-blue"
+            >
+              <FileText className="h-4 w-4 mr-2" />
+              Resume
+            </Button>
             <Button 
               variant="hero-outline" 
               onClick={() => scrollToSection('contact')}
@@ -96,7 +106,18 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
-              <div className="pt-4 border-t border-surface-tertiary/20">
+              <div className="pt-4 border-t border-surface-tertiary/20 space-y-3">
+                <Button 
+                  variant="ghost" 
+                  className="w-full justify-start"
+                  onClick={() => {
+                    navigate('/resume');
+                    setIsMobileMenuOpen(false);
+                  }}
+                >
+                  <FileText className="h-4 w-4 mr-2" />
+                  Resume
+                </Button>
                 <Button 
                   variant="hero" 
                   className="w-full"

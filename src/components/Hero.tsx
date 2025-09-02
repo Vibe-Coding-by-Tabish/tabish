@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, Github, Linkedin, ExternalLink } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
+import techFrame from '@/assets/tech-video-frame.jpg';
 
 const Hero = () => {
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
@@ -27,13 +28,23 @@ const Hero = () => {
     <section 
       id="hero" 
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero"
-      style={{
-        backgroundImage: `linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url(${heroBg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
     >
+      {/* Animated Tech Background */}
+      <div 
+        className="absolute inset-0 w-full h-full bg-cover bg-center z-0 animate-pulse"
+        style={{
+          backgroundImage: `linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url(${techFrame})`,
+        }}
+      >
+        {/* Animated overlay particles */}
+        <div className="absolute inset-0 bg-gradient-to-br from-electric-blue/10 via-transparent to-electric-blue/5 animate-pulse"></div>
+      </div>
+      
+      {/* Tech Grid Animation */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-electric-blue/20 to-transparent animate-ping" style={{ animationDuration: '4s' }}></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-electric-blue/10 to-transparent animate-ping" style={{ animationDuration: '6s', animationDelay: '1s' }}></div>
+      </div>
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-glow rounded-full opacity-20 animate-float"></div>
@@ -41,7 +52,7 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-glow rounded-full opacity-10 animate-float" style={{ animationDelay: '4s' }}></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-20">
         <div className="text-center max-w-4xl mx-auto">
           {/* Name */}
           <h1 className="text-5xl md:text-7xl font-bold text-text-primary mb-6 animate-fade-in-up">
