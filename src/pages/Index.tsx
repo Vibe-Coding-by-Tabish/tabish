@@ -1,12 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navigation from '@/components/Navigation';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import TechStack from '@/components/TechStack';
+import Projects from '@/components/Projects';
+import Experience from '@/components/Experience';
+import Contact from '@/components/Contact';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-surface-primary">
+      <Navigation />
+      <main>
+        <Hero />
+        <About />
+        <TechStack />
+        <Projects />
+        <Experience />
+        <Contact />
+      </main>
+      
+      {/* Footer */}
+      <footer className="bg-surface-secondary border-t border-surface-tertiary/20 py-8">
+        <div className="container mx-auto px-6">
+          <div className="text-center">
+            <p className="text-text-secondary">
+              © 2024 Alex Chen. Built with React, TypeScript, and a passion for AI.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
