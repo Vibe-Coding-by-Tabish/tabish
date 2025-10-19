@@ -1,4 +1,5 @@
 import profilePhoto from '@/assets/profile-photo.jpg';
+import profilePic from '@/assets/profile_pic.jpg';
 
 const About = () => {
   return (
@@ -14,9 +15,10 @@ const About = () => {
             <div className="relative group animate-fade-in-up">
               <div className="relative overflow-hidden rounded-2xl shadow-medium group-hover:shadow-glow transition-all duration-500">
                 <img 
-                  src={profilePhoto} 
-                  alt="Alex Chen - Full Stack AI Engineer"
-                  className="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-500"
+                  src={profilePic}
+                  // src="./assets/profile_pic.jpg" 
+                  alt="Tabish Ali Ansari - Full Stack AI Engineer"
+                  className="w-fill h-96 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
@@ -29,38 +31,33 @@ const About = () => {
             <div className="space-y-6 animate-slide-in-right">
               <div className="prose prose-lg max-w-none">
                 <p className="text-text-secondary leading-relaxed text-lg">
-                  I'm a passionate technologist who discovered the intersection of artificial intelligence 
-                  and full-stack development early in my career. What started as curiosity about machine 
-                  learning algorithms has evolved into a deep expertise in building end-to-end intelligent systems.
+                  I’m the friendly neighborhood coder! An AI & Data Science undergrad with a curious mind and 
+                  a maker’s spirit. My journey with tech started when I was 15, experimenting with HTML and 
+                  CSS just for fun. That early fascination evolved into a drive to build applications.
+                  I truly discovered my passion for Data Science when I came across the words
+                  “Artificial Intelligence” tucked away in a small section of my school computer textbook.
                 </p>
-                
                 <p className="text-text-secondary leading-relaxed text-lg">
-                  My philosophy centers on creating software that is not only functional but truly intelligent 
-                  and user-centric. I believe the best AI applications are those that seamlessly integrate 
-                  into users' workflows, making complex tasks feel effortless.
-                </p>
-                
-                <p className="text-text-secondary leading-relaxed text-lg">
-                  When I'm not coding, I'm exploring the latest developments in AI research, contributing to 
-                  open-source projects, or sharing insights through technical writing. I'm particularly 
-                  interested in the ethical implications of AI and how we can build more inclusive, 
-                  transparent systems.
+                  Beyond the screen, I’m passionate about football, painting, and traveling — things that keep 
+                  me grounded, inspired, and constantly learning from the world around me. Whether I’m on a 
+                  football field or exploring a new place, I bring the same energy to my work: curiosity, 
+                  focus, and the desire to create something meaningful.
                 </p>
               </div>
 
               {/* Quick Stats */}
               <div className="grid grid-cols-3 gap-6 pt-6 border-t border-surface-tertiary">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-electric-blue mb-1">5+</div>
-                  <div className="text-sm text-text-secondary">Years Experience</div>
+                  <div className="text-2xl font-bold text-electric-blue mb-1">6+</div>
+                  <div className="text-sm text-text-secondary">Months Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-electric-blue mb-1">50+</div>
+                  <div className="text-2xl font-bold text-electric-blue mb-1">5+</div>
                   <div className="text-sm text-text-secondary">Projects Completed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-electric-blue mb-1">15+</div>
-                  <div className="text-sm text-text-secondary">AI Models Deployed</div>
+                  <div className="text-2xl font-bold text-electric-blue mb-1">10+</div>
+                  <div className="text-sm text-text-secondary">Hackathons Participated</div>
                 </div>
               </div>
             </div>

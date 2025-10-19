@@ -24,7 +24,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center">
             <p className="text-text-secondary">
-              © 2024 Alex Chen. Built with React, TypeScript, and a passion for AI.
+              © 2025 Tabish Ali Ansari
             </p>
           </div>
         </div>

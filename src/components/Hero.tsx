@@ -56,7 +56,7 @@ const Hero = () => {
         <div className="text-center max-w-4xl mx-auto">
           {/* Name */}
           <h1 className="text-5xl md:text-7xl font-bold text-text-primary mb-6 animate-fade-in-up">
-            Alex Chen
+            Tabish Ali Ansari
             <span className="text-electric-blue">.</span>
           </h1>
 
@@ -107,7 +107,7 @@ const Hero = () => {
               asChild
             >
               <a 
-                href="https://linkedin.com/in/alexchen" 
+                href="https://www.linkedin.com/in/tabishaliansari/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="LinkedIn Profile"
@@ -121,7 +121,7 @@ const Hero = () => {
               asChild
             >
               <a 
-                href="https://github.com/alexchen" 
+                href="https://github.com/tabishaliansari" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="GitHub Profile"
