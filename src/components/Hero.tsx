@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { ChevronDown, Github, Linkedin, ExternalLink } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, ExternalLink, Youtube } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
 import techFrame from '@/assets/tech-video-frame.jpg';
 
@@ -135,12 +135,12 @@ const Hero = () => {
               asChild
             >
               <a 
-                href="https://medium.com/@alexchen" 
+                href="https://www.youtube.com/@teammavericks-00" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="Blog"
               >
-                <ExternalLink className="h-6 w-6" />
+                <Youtube className="h-6 w-6" />
               </a>
             </Button>
           </div>
