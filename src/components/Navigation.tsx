@@ -47,7 +47,7 @@ const Navigation = () => {
             onClick={() => scrollToSection('hero')}
             className="text-2xl font-bold text-text-primary hover:text-electric-blue transition-colors duration-300"
           >
-            Alex<span className="text-electric-blue">.</span>
+            Tabish<span className="text-electric-blue">.</span>
           </button>
 
           {/* Desktop Navigation */}
@@ -67,9 +67,9 @@ const Navigation = () => {
           {/* Resume & CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
             <Button 
-              variant="ghost" 
+              variant="hero-outline" 
               onClick={() => navigate('/resume')}
-              className="text-text-secondary hover:text-electric-blue"
+              className="text-text-secondary hover:red"
             >
               <FileText className="h-4 w-4 mr-2" />
               Resume

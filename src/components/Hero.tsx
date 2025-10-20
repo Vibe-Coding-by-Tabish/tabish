@@ -75,7 +75,7 @@ const Hero = () => {
 
           {/* Bio */}
           <p className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            A passionate Full Stack AI Engineer dedicated to building scalable, intelligent applications. 
+            A passionate Engineer dedicated to building scalable, intelligent applications. 
             I transform complex problems into elegant, production-ready systems.
           </p>
 

@@ -1,67 +1,71 @@
-import { Briefcase, GraduationCap, Calendar, MapPin } from 'lucide-react';
+import { Calendar, MapPin } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
     {
-      type: 'work',
-      title: 'Senior AI Engineer',
-      company: 'TechFlow AI',
-      location: 'San Francisco, CA',
-      period: 'Jan 2023 - Present',
+      type: "work",
+      title: "Full-Stack AI Intern",
+      company: "NonStop io Technologies",
+      location: "Pune, India",
+      period: "Jan 2023 - Present",
+      icon: "/nonstop.jpg",
       description: [
-        'Led development of production ML systems serving 100K+ daily users with 99.9% uptime',
-        'Architected microservices infrastructure reducing model inference latency by 60%',
-        'Mentored junior engineers and established ML engineering best practices'
-      ]
+        "Built and scaled backend systems with Java + Spring Boot, adding OAuth 2.0 authentication and automating PDF workflows using pdfme.",
+        "AWorked across the stack with React, NestJS, and Nextflow, improving data pipelines and building tools that actually made work easier.",
+        "Explored AI-driven automation, shared knowledge with teammates, and honed skills in Git, Postman, JMeter, and agile development.",
+      ],
     },
     {
-      type: 'work',
-      title: 'Full Stack AI Developer',
-      company: 'DataVision Corp',
-      location: 'Remote',
-      period: 'Mar 2021 - Dec 2022',
+      type: "work",
+      title: "Hackathons",
+      company: "Team Mavericks and others",
+      location: "Hybrid",
+      period: "Sep 2023 - Present",
+      icon: "/mavericks.png",
       description: [
-        'Built end-to-end data science applications using React, Python, and cloud services',
-        'Improved model accuracy by 25% through advanced feature engineering and optimization',
-        'Collaborated with product teams to translate business requirements into technical solutions'
-      ]
+        "As the leader of Team Mavericks, I spearheaded our journey through multiple national-level competitions",
+        "Secured a 3rd place finish, a first runner-up title with a cash prize, and achieving All-India Top 10 with ₹10,000 in Amazon gift vouchers.",
+        "I drove strategy, collaboration, and innovation to consistently deliver winning solutions under pressure.",
+      ],
     },
     {
-      type: 'work',
-      title: 'Software Engineer',
-      company: 'StartupLab Inc',
-      location: 'Austin, TX',
-      period: 'Jun 2019 - Feb 2021',
+      type: "education",
+      title: "Bachelor of Technology in AI & Data Science",
+      company: "AISSMS Institute of Information Technology",
+      location: "Pune, India",
+      period: "Nov 2020 - Jul 2026",
+      icon: "/ioit.png",
       description: [
-        'Developed scalable web applications using modern JavaScript frameworks and Node.js',
-        'Implemented CI/CD pipelines reducing deployment time by 80%',
-        'Contributed to open-source projects and technical documentation'
-      ]
+        "Specializing in Artificial Intelligence & Data Science with minor in Electronics and Telecommunications.",
+        "Relevant coursework includes Data Structures, Algorithms, Database Systems, Machine Learning, Deep Learning, Cloud Computing, Software Engineering and Operating Systems.",
+        "8.23 CGPA as of October 2025",
+      ],
     },
     {
-      type: 'education',
-      title: 'M.S. Computer Science',
-      company: 'Stanford University',
-      location: 'Stanford, CA',
-      period: '2017 - 2019',
+      type: "education",
+      title: "French (B-2 Proficiency)",
+      company: "Department of Foreign Languages, SPPU",
+      location: "Pune, India",
+      period: "2021 - 2025",
+      icon: "/sppu.jpeg",
       description: [
-        'Specialized in Machine Learning and Artificial Intelligence',
-        'Thesis: "Scalable Deep Learning for Real-time Recommendation Systems"',
-        'GPA: 3.9/4.0, Dean\'s List, Research Assistant in AI Lab'
-      ]
+        "Completed Advanced Diploma in French from the Department of Foreign Languages, SPPU, attaining B2 proficiency.",
+        "Specialized in translation during the final year, gaining hands-on experience with CAT tools and strengthening professional linguistic accuracy across domains.",
+      ],
     },
     {
-      type: 'education',
-      title: 'B.S. Computer Engineering',
-      company: 'UC Berkeley',
-      location: 'Berkeley, CA',
-      period: '2013 - 2017',
+      type: "education",
+      title: "10th (SSC) and 12th (HSC) CBSE",
+      company: "Sinhgad City School",
+      location: "Pune, India",
+      period: "2020 - 2022",
+      icon: "/scs.png",
       description: [
-        'Graduated Magna Cum Laude with focus on Software Engineering',
-        'President of Computer Science Student Association',
-        'Winner of multiple hackathons and programming competitions'
-      ]
-    }
+        "Scored 96% in 10th grade and 92% in 12th grade.",
+        "Earned a certificate of merit in Mathematics Standard, placing in the top 0.1% nationwide",
+        "Led the Red House football team to two consecutive inter-house championship wins, reflecting both academic excellence and leadership.",
+      ],
+    },
   ];
 
   return (
@@ -72,7 +76,7 @@ const Experience = () => {
             Experience & <span className="text-electric-blue">Education</span>
           </h2>
           <p className="text-text-secondary text-center mb-16 max-w-3xl mx-auto">
-            A journey through innovative companies and prestigious institutions, 
+            A journey through innovative companies and prestigious institutions,
             building expertise in AI and full-stack development.
           </p>
 
@@ -82,7 +86,7 @@ const Experience = () => {
 
             <div className="space-y-12">
               {experiences.map((exp, index) => (
-                <div 
+                <div
                   key={index}
                   className="relative flex items-start group animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
@@ -92,47 +96,59 @@ const Experience = () => {
                     <div className="absolute inset-0 bg-electric-blue rounded-full animate-ping opacity-20"></div>
                   </div>
 
-                  {/* Content card */}
-                  <div className="ml-20 bg-gradient-card p-8 rounded-2xl shadow-soft hover:shadow-glow transition-all duration-500 border border-surface-tertiary/30 hover:border-electric-blue/30 group-hover:scale-105 w-full">
-                    <div className="flex items-start justify-between mb-4">
-                      <div className="flex items-center gap-3">
-                        <div className="p-2 rounded-lg bg-electric-blue/10 group-hover:bg-electric-blue/20 transition-colors duration-300">
-                          {exp.type === 'work' ? (
-                            <Briefcase className="h-5 w-5 text-electric-blue" />
-                          ) : (
-                            <GraduationCap className="h-5 w-5 text-electric-blue" />
-                          )}
-                        </div>
-                        <div>
-                          <h3 className="text-xl font-bold text-text-primary group-hover:text-electric-blue transition-colors duration-300">
-                            {exp.title}
-                          </h3>
-                          <p className="text-electric-blue font-medium">
-                            {exp.company}
-                          </p>
-                        </div>
+                  {/* Card container */}
+                  <div className="ml-20 bg-gradient-card p-8 rounded-2xl shadow-soft hover:shadow-glow transition-all duration-500 border border-surface-tertiary/30 hover:border-electric-blue/30 group-hover:scale-[1.02] w-full flex items-start gap-6">
+                    {/* Left logo section */}
+                    <div className="flex-shrink-0">
+                      <div className="w-14 h-14 rounded-xl bg-electric-blue/10 group-hover:bg-electric-blue/20 transition-all duration-300 flex items-center justify-center shadow-inner">
+                        {exp.icon ? (
+                          <img
+                            src={exp.icon}
+                            alt={`${exp.company} logo`}
+                            className="w-10 h-10 object-contain rounded-lg"
+                          />
+                        ) : (
+                          <div className="w-8 h-8 bg-electric-blue rounded-full" />
+                        )}
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-4 mb-4 text-sm text-text-secondary">
-                      <div className="flex items-center gap-1">
-                        <Calendar className="h-4 w-4" />
-                        {exp.period}
+                    {/* Right text section */}
+                    <div className="flex-1">
+                      <div className="mb-4">
+                        <h3 className="text-xl font-bold text-text-primary group-hover:text-electric-blue transition-colors duration-300">
+                          {exp.title}
+                        </h3>
+                        <p className="text-electric-blue font-medium">
+                          {exp.company}
+                        </p>
                       </div>
-                      <div className="flex items-center gap-1">
-                        <MapPin className="h-4 w-4" />
-                        {exp.location}
-                      </div>
-                    </div>
 
-                    <ul className="space-y-2">
-                      {exp.description.map((item, i) => (
-                        <li key={i} className="text-text-secondary flex items-start gap-2">
-                          <span className="text-electric-blue mt-2 text-xs">▸</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
+                      <div className="flex items-center gap-4 mb-4 text-sm text-text-secondary">
+                        <div className="flex items-center gap-1">
+                          <Calendar className="h-4 w-4" />
+                          {exp.period}
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <MapPin className="h-4 w-4" />
+                          {exp.location}
+                        </div>
+                      </div>
+
+                      <ul className="space-y-2">
+                        {exp.description.map((item, i) => (
+                          <li
+                            key={i}
+                            className="text-text-secondary flex items-start gap-2"
+                          >
+                            <span className="text-electric-blue mt-2 text-xs">
+                              ▸
+                            </span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               ))}
