@@ -38,7 +38,7 @@ const About = () => {
                   “Artificial Intelligence” tucked away in a small section of my school computer textbook.
                 </p>
                 <p className="text-text-secondary leading-relaxed text-lg">
-                  Beyond the screen, I’m passionate about football, painting, and traveling — things that keep 
+                  Beyond the screen, I’m passionate about football, riding, table tennis, and traveling. These things keep 
                   me grounded, inspired, and constantly learning from the world around me. Whether I’m on a 
                   football field or exploring a new place, I bring the same energy to my work: curiosity, 
                   focus, and the desire to create something meaningful.

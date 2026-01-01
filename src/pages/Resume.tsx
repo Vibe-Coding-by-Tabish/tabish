@@ -24,7 +24,7 @@ const Resume = () => {
             <Button 
               variant="ghost" 
               onClick={() => navigate('/')}
-              className="text-text-secondary hover:text-electric-blue"
+              className="text-text-secondary hover:text-electric-blue hover:text-white"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Portfolio

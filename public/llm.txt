@@ -1,0 +1,8 @@
+# llm.txt
+# Guidance for AI and LLM crawlers
+
+User-Agent: *
+Allow: /
+
+# Training usage
+Disallow-Training: false
