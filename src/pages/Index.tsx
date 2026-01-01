@@ -5,6 +5,7 @@ import TechStack from '@/components/TechStack';
 import Projects from '@/components/Projects';
 import Experience from '@/components/Experience';
 import Contact from '@/components/Contact';
+import Blogs from '@/components/Blogs';
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
         <TechStack />
         <Projects />
         <Experience />
+        <Blogs />
         <Contact />
       </main>
       
