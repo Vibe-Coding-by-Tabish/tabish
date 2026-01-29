@@ -34,6 +34,11 @@ const GALLERY: GalleryItem[] = [
     caption: "Hackathons and Competitions"
   },
   {
+    src: "/lt-dataengg.png",
+    alt: "Data Engineering 101",
+    caption: "Talks and sessions"
+  },
+  {
     src: "/group-discussion.jpeg",
     alt: "Group discussion session",
     caption: "Collaborative learning"
